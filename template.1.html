@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>jQuery Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Lobster|Pacifico|Permanent+Marker|Sansita" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.1.1.js">
         $(function() {
 
@@ -25,14 +27,21 @@
         <h3>What text would you like to display?</h3>
         Text:
         <input type="text" name="Text" required><br>
-        <h3>Select the size of your banner:</h3>
-            <select name="size" required>
-                <option value="extraSmall" selected>3'</option>
-                <option value="small" selected>4'5</option>
-                <option value="average" selected>6'</option>
-                <option value="tall" selected>7' and higher</option>
+        <h3>Please select one of the following font-families:</h3>
+        <input type="radio" name="font-family1" />Sansita
+        <input type="radio" name="font-family2" />Indie Flower
+        <input type="radio" name="font-family3" />Lobster
+        <input type="radio" name="font-family4" />Pacifico
+        <input type="radio" name="font-family5" />Amatic SC
+        <input type="radio" name="font-family6" />Permanent Marker
+        <h3>Choose an image you like to display as your background:</h3>
+        <input type="file" id="myFile" value=return><br>
+        <br><br>
+        <input class="button" type="submit" value="Submit">
     </div>
-    <div class="banner">What color should i be?</div>
+    <div class="banner">
+
+    </div>
 
 </body>
 
