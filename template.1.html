@@ -8,8 +8,14 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.js">
         $(function() {
-            var userImage = $("userFile").html();
-            
+
+            $('button').click(function() {
+                // var userImage = $("userFile").css();
+                // $(".banner").css("userImage");
+                var userH2 =$("h2").html();
+                $("h2,.banner").html("userH2");
+            });
+
         });
     </script>
     <style>
@@ -41,7 +47,7 @@
         <button>Submit results!</button>
     </div>
     <div class="banner">
-
+        <h2></h2>
     </div>
 
 </body>
