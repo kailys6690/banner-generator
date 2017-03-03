@@ -12,8 +12,9 @@
             $('button').click(function() {
                 // var userImage = $("userFile").css();
                 // $(".banner").css("userImage");
-                var userH2 =$("h2").html();
-                $("h2,.banner").html("userH2");
+                var user2 = $("Text").html();
+                $("h2,.banner").html("user2").css('color', 'white');
+                return
             });
 
         });
@@ -33,7 +34,7 @@
     <div class="container">
         <h3>What text would you like to display?</h3>
         Text:
-        <input type="text" name="Text" required><br>
+        <input type="text" name="Text" value="" required><br>
         <h3>Please select one of the following font-families:</h3>
         <input type="radio" name="font-family1" />Sansita
         <input type="radio" name="font-family2" />Indie Flower
@@ -48,6 +49,7 @@
     </div>
     <div class="banner">
         <h2></h2>
+        
     </div>
 
 </body>
