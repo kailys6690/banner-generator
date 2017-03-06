@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Lobster|Pacifico|Permanent+Marker|Sansita" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js">
+    </script>
+    <script>
+        $(function() {
+
+            $('#submit').click(function() {
+                $('#banner').html($('#userText').val());
+                
+                var userfont = $("input[type=radio][name=family]:checked").val();
+                $('#banner').css('font-family', userfont).css('font-size', '45px').css('text-align', 'center');
+            });
+             $('#red').click(function() {
+                $('#banner').css("background-color", "red")
+             });
+             $('#pink').click(function() {
+                $('#banner').css("background-color", "pink")
+             });
+             $('#blue').click(function() {
+                $('#banner').css("background-color", "blue")
+             });
+             $('#yellow').click(function() {
+                $('#banner').css("background-color", "yellow")
+             });
+             $('#orange').click(function() {
+                $('#banner').css("background-color", "orange")
+             });
+        });
+    </script>
+    <style>
+        #banner {
+            background-color: white;
+            color: black;
+            width: 600px;
+            height: 300px;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>What text would you like to display?</h3>
+        Text:
+        <input id="userText"><br>
+
+        <h3>Please select one of the following font-families:</h3>
+        
+        <form id="font">
+            <input type="radio" name="family" value="sansita">Sansita
+            <input type="radio" name="family" value="indie flower">Indie Flower
+            <input type="radio" name="family" value="lobster">Lobster
+            <input type="radio" name="family" value="pacifico">Pacifico
+            <input type="radio" name="family" value="amatic sc">Amatic SC
+            <input type="radio" name="family" value="permanent marker">Permanent Marker
+        </form>
+
+        <h3>Choose color of background:</h3> 
+        <!--<input type="color" id="backgroundColor" /><br>-->
+        <button id="red">Red!</button>
+        <button id="pink">Pink!</button>
+        <button id="blue">Blue!</button>
+        <button id="yellow">Yellow!</button>
+        <button id="orange">Orange!</button>
+        <br>
+        <button id="submit">Submit</button>
+    </div>
+    <div id="banner">
+        <h2>Text</h2>
+    </div>
+</body>
+
+</html>
