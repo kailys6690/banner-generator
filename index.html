@@ -12,11 +12,12 @@
         $(function() {
 
             $('#submit').click(function() {
-                $('#banner').html($('#userText').val());
+                $('#banner').html($('#userText').val());//this gets and sets the users text input 
                 
-                var userfont = $("input[type=radio][name=family]:checked").val();
-                $('#banner').css('font-family', userfont).css('font-size', '45px').css('text-align', 'center');
+                var userfont = $("input[type=radio][name=family]:checked").val();//creates a variable that checks to see when user selects one of the radio inputs, it will get the value
+                $('#banner').css('font-family', userfont).css('font-size', '45px').css('text-align', 'center');//this sets the users input with changing the font size and centering the centering the text 
             });
+            // selects the button named "red" (and other buttons below) when clicked, the banner will have a background of one of the colors below
              $('#red').click(function() {
                 $('#banner').css("background-color", "red")
              });
@@ -56,7 +57,7 @@
 
         <h3>Please select one of the following font-families:</h3>
         
-        <form id="font">
+        <form id="font"> 
             <input type="radio" name="family" value="sansita">Sansita
             <input type="radio" name="family" value="indie flower">Indie Flower
             <input type="radio" name="family" value="lobster">Lobster
@@ -66,13 +67,14 @@
         </form>
 
         <h3>Choose color of background:</h3> 
-        <!--<input type="color" id="backgroundColor" /><br>-->
+        <!--this creates buttons that will allow the user what color thwy want-->
         <button id="red">Red!</button>
         <button id="pink">Pink!</button>
         <button id="blue">Blue!</button>
         <button id="yellow">Yellow!</button>
         <button id="orange">Orange!</button>
         <br>
+        <!--this creates a button that will confirm all of the users inputs selected above-->
         <button id="submit">Submit</button>
     </div>
     <div id="banner">
